@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Input</title>
+</head>
+<body>
+
+<h2>Array Output</h2>
+
+<script>
+
+let arr = [];
+
+let size = (prompt("How many elements you want to enter?"));
+
+for(let i=0; i<size; i++){
+   arr[i] = (prompt("Enter the values :"));
+}
+ document.writeln("The array is:"+"<br>");
+for (let i = 0; i < size; i++) {
+   document.writeln(arr[i]+"<br>");
+    
+}
+let count=0;
+for (let i = 0;  arr[i]!== undefined; i++) {
+    count++;
+    
+}
+document.writeln("array length:"+ count);
+</script>
+
+</body>
+</html>
